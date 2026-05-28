@@ -39,7 +39,7 @@ return(
       <InputGroupAddon>
         <Search />
       </InputGroupAddon>
-      <InputGroupAddon align="inline-end">{res.results[0].id?res.results.length:`No`} results</InputGroupAddon>
+      <InputGroupAddon className={'m-2'} align="inline-end">{res.results[0].id?res.results.length:t('No')} {t('results')}</InputGroupAddon>
     </InputGroup>
 {/*INPUT */
 /*

@@ -11,6 +11,8 @@
   "visibility": "Visibility",
   "search_placeholder": "search",
   "no_city": "No city! try again",
+  "results":"results",
+  "No":"No",
   "language_label": "Language",
   "select_language": "Search",
   "select-l":"Select language",
