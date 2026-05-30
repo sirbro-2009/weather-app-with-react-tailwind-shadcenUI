@@ -4,18 +4,14 @@ import {
 } from "@/components/ui/native-select"
 
 import { useTranslation } from 'react-i18next';
-//import SharProps from "./Hooks/SharProps"
-//import { useContext } from "react"
-
 export default function SelectBar(){
   const {t,  i18n } = useTranslation();
 
   const handleLanguageChange = (e) => {
 
     const selectedLang = e.target.value;
-    i18n.changeLanguage(selectedLang); // تغيير اللغة برمجياً
+    i18n.changeLanguage(selectedLang);
     
-    // قلب اتجاه الموقع تلقائياً (يمين لليسار للعربية، ويسار لليمين للإنجليزية)
     document.dir = selectedLang === 'ar' ? 'rtl' : 'ltr';
   }
     return (<><NativeSelect className={`h-1/2 self-center`}onChange={handleLanguageChange} value={i18n.language}> 

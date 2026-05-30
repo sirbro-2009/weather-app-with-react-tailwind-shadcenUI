@@ -1,6 +1,7 @@
 import './App.css'
 import { Header } from './components/components/header'
 import { TheBody } from './components/components/body'
+import Footer from './components/components/Footer'
 import { useState,useEffect } from 'react'
 import SharProps from './components/components/Hooks/SharProps'
 import {getWeatherApi} from './function'
@@ -88,11 +89,11 @@ return (
       `,
     }}
   />
-  {/* Your Content/Components */}
     <div className={`relative z-10 w-full min-h-screen flex flex-col font-['Rubik']`}>
       <Header></Header>
     {showAlert?<AlertDestructive></AlertDestructive>:``}
       <TheBody></TheBody>
+      <Footer></Footer>
     </div>
 </div>
 

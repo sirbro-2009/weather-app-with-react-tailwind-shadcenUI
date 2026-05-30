@@ -1,4 +1,3 @@
-//import { SkeletonDemo } from "./SkeletonDemo"
 import { 
   Thermometer, 
   Droplets, 

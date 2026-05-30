@@ -9,7 +9,7 @@ export  default function State({obj}){
 const {t} = useTranslation()
 let allDivs
 try{
-   allDivs = Object.keys(obj).map((e,i)=>{
+  allDivs = Object.keys(obj).map((e,i)=>{
   const value = e === 'weather_status' ? t(obj[e].value.replaceAll(" ","_").toLowerCase()) : obj[e].value
   if(obj.weather_status.value === ''){
     return(
